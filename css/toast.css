@@ -1,0 +1,83 @@
+.toast-notify-container-div {
+	position: fixed;
+    padding: 0 3px 0 3px;
+	cursor: pointer;
+}
+
+.toast-notify-div {
+	width: 200px;
+    height: 100%;
+	min-height: 35px;
+    padding: 6px;
+    margin: 3px 0 3px 0;
+	background-position: 10px center;
+    background-repeat: no-repeat;
+	background-size: 26px;
+}
+.toast-notify-div:hover {
+	-webkit-box-shadow: -1px 3px 14px 0px rgba(0,0,0,0.58);
+	-moz-box-shadow: -1px 3px 14px 0px rgba(0,0,0,0.58);
+	box-shadow: -1px 3px 14px 0px rgba(0,0,0,0.58);
+}
+
+.alert-info { background-image: url('../images/info.png'); }
+.alert-warning { background-image: url('../images/warning.png'); }
+.alert-success { background-image: url('../images/success.png'); }
+.alert-danger { background-image: url('../images/error.png'); }
+
+.toast-notify-div, .toast-notify-div * {
+	position: relative;
+}
+
+.toast-notify-message-div{
+	padding-left: 45px;
+	word-wrap: break-word; 
+	word-break: normal;
+}
+
+.toast-notify-go-url-span {
+    background-image: url('../images/arrow.gif');
+    background-repeat: no-repeat;
+    background-position: 5px center;
+    background-size: 12px;
+    display: inline-block;
+    width: 16px;
+    height: 12px;
+    top: 1px;
+}
+
+.toast-notify-close-button-div {
+	background-image: url('../images/close.png');
+    background-repeat: no-repeat;
+    width: 9px;
+    height: 9px;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    opacity: .3;
+}
+
+.toast-notify-close-button-div:hover {
+    opacity: 1;
+}
+
+.container-ct, .container-cb, .container-ft, .container-fb {
+	width: 100%;
+}
+
+.container-cb, .container-rb, .container-lb, .container-fb {
+	bottom: 0;
+}
+
+.container-rt, .container-rb {
+	right: 0;
+}
+
+.notify-ct, .notify-cb{
+	margin-left: auto; 
+	margin-right: auto; 
+}
+
+.notify-ft, .notify-fb {
+	width: 100%
+}

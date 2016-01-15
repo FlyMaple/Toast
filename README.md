@@ -22,7 +22,8 @@
 ```
 ***
 # Demo
-Demo WebSite: http://flymaple.github.io/Toast/index.html
+Demo WebSite: http://flymaple.github.io/Toast/index.html  
+
 Toast 在同個 Page 會有一個共同的 Container，所以在 init 的時候必須決定在螢幕的所處位置 ( 預設: lb: 左下 )，  
 若要在 init 之後更改定位點必須執行 toast.destory() ， 目前共有 10個 定位點:  
 ( lt: 左上、ct: 中上、rt: 右上、ft: 滿上、lm: 左中、rm: 右中、lb: 左下、cb: 中下、rb: 右下、fb: 滿下 )  

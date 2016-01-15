@@ -36,7 +36,7 @@
 			$containerDiv = jQuery('<div/>', {class: 'toast-notify-container-div'});
 			$containerDiv.appendTo($('body'));
 			isInit = true;
-			toast['options'] = $.extend({}, defaultOptions, options);
+			toast['options'] = $.extend(defaultOptions, options);
 			toast['upToDown'] = toast['options']['upToDown'];
 			toast['position'] = toast['options']['position'];
 			toast['timeout'] = toast['options']['timeout'];
@@ -92,11 +92,12 @@
         }
 		$notifyMessageDiv.appendTo($notifyDiv);
         
-		
-		$closeButtonDiv.on('click', function (event) {
-            closeButtonClickEvent(event);
-        });
-		$closeButtonDiv.appendTo($notifyDiv);
+		if (toast['options']['closeButton']) {
+            $closeButtonDiv.on('click', function (event) {
+                closeButtonClickEvent(event);
+            });
+            $closeButtonDiv.appendTo($notifyDiv);
+        }
 		
 		addNotify();
 		positionHandler();
